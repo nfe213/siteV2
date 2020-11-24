@@ -10,9 +10,19 @@
       rel="stylesheet">
   </head>
   <body>
+    <script src="js/hamburger.js"></script>
+    <div id="navOverlay" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="overlay-content">
+        <a href="#">Home</a>
+        <a href="#">Articles & Awards</a>
+        <a href="#">Projects & Experiences</a>
+        <a href="#">Downloads</a>
+      </div>
+    </div>
     <div class="header">
       <div class="nav-bar-opposition-wrapper">
-        <button type="button" class="hamburger"><p>menu</p></button>
+        <button type="button" onclick="openNav()" class="hamburger"><p>menu</p></button>
         <img src="src/icon.png" alt="Nathan Eads Logo" class="logo">
         <p class="opposition-text header-text">Nathan Eads</p>
       </div>
@@ -23,7 +33,5 @@
         <li class="nav-bar-item header-text">Downloads</li>
       </ul>
     </div>
-
-
   </body>
 </html>

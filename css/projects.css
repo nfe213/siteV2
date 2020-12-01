@@ -67,6 +67,18 @@
   margin-left: 15%;
 }
 
+@media (max-width: 975px) {
+  .photos-header {
+    display: block;
+    margin: auto;
+    margin-bottom: 21px;
+    margin-top: 21px;
+  }
+  h1 {
+    margin-bottom: 21px;
+  }
+}
+
 .company-text-no-picture {
   width: 100%;
   margin: 40px;

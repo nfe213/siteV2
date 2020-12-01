@@ -132,6 +132,21 @@
     width: 100%;
     margin: 40px;
   }
+  h1 {
+    display: block;
+    margin: auto;
+  }
+}
+
+@media (max-width: 510px) {
+  h1 {
+    font-size: 24px;
+    margin-bottom: 11px;
+  }
+  h2,h3  {
+    font-size: 16px;
+  }
+
 }
 
 .company-name {

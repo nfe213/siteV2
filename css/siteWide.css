@@ -71,6 +71,14 @@ a {
   text-decoration: none;
 }
 
+.smartBreak {display: none;}
+
+@media (max-width: 510px) {
+  .smartBreak {
+    display: block;
+  }
+}
+
 /* Begin Header */
 
 .header {

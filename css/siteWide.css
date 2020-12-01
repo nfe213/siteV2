@@ -1,0 +1,279 @@
+:root {
+  --crimson: #900f09;
+}
+
+body {
+  margin: 0px;
+  font-family: sans-serif;
+}
+
+p, div, ul {
+  margin: 0px;
+}
+
+h1 {
+  display: block;
+  position: relative;
+  width: max-content;
+  padding: 8px 32px;
+  text-transform: uppercase;
+  color: #232323;
+
+  -webkit-user-select: none; /* Make text non-selectable Safari */
+  -moz-user-select: none; /* Make text non-selectable Firefox */
+  -ms-user-select: none; /* Make text non-selectable IE10+/Edge */
+  user-select: none; /* Make text non-selectable Standard */
+}
+
+h1::before {
+  position: absolute;
+    top: 0;
+    left: 0;
+    height: 30px;
+    width: 30px;
+
+    content: "";
+    background-image: url(../src/brackets.png);
+    background-size: cover;
+}
+h1::after {
+  position: absolute;
+      bottom: 0;
+      right: 0;
+      height: 30px;
+      width: 30px;
+
+      content: "";
+      background-image: url(../src/brackets.png);
+      background-size: cover;
+      transform: rotate(180deg);
+      -webkit-transform: rotate(180deg);
+      -moz-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+      -o-transform: rotate(180deg);
+}
+
+h2 {
+  color: var(--crimson);
+  font-family: "Open Sans", sans-serif;
+  margin: 0px;
+}
+
+h3, span{
+  color: #414141;
+}
+
+li {
+  color: #444444 ;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Begin Header */
+
+.header {
+  width: 80%;
+  padding: 0px 10%;
+  background-color: var(--crimson);
+  display: inline-flex;
+
+  -webkit-user-select: none; /* Make text non-selectable Safari */
+  -moz-user-select: none; /* Make text non-selectable Firefox */
+  -ms-user-select: none; /* Make text non-selectable IE10+/Edge */
+  user-select: none; /* Make text non-selectable Standard */
+}
+
+.header-text {
+  font-size: 21px;
+  color: white;
+  padding: 18px 21px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+.nav-bar-links-wrapper {
+  width: max-content;
+  display: inline-flex;
+  justify-content: flex-end;
+  padding-left: 0px;
+}
+
+.nav-bar-opposition-wrapper {
+  width: 30%;
+}
+
+.hamburger {
+  font-family: Material Icons;
+  background-color: transparent;
+  color: white;
+  border: none;
+  font-size: 30px;
+  padding: 9px;
+  vertical-align: middle;
+  display: none;
+}
+
+.hamburger:focus {
+  outline: none;
+}
+
+.logo {
+  height: 30px;
+  padding-bottom: 3px;
+  vertical-align: middle;
+}
+
+.opposition-text {
+  display: inline-flex;
+}
+
+.nav-bar-item {
+  list-style-type: none;
+  justify-content: space-around;
+  flex-shrink: 1;
+  transition: .3s;
+  cursor: pointer;
+  width: max-content
+}
+
+.nav-bar-item:hover {
+  background-color: white;
+  color: black;
+  transition: .5s;
+}
+
+@media (max-width: 1450px) {
+  .header-text {
+    font-size: 20px;
+    padding: 18px 18px
+  }
+}
+
+@media (max-width: 1130px) {
+
+}
+
+@media (max-width: 1285px) {
+  .header-text {
+    padding: 18px 9px;
+  }
+  .nav-bar-opposition-wrapper {
+    width: 30%
+  }
+  .logo {
+    height: 20px;
+  }
+}
+
+@media (max-width: 1130px) {
+  .header-text {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 910px) {
+  .nav-bar-opposition-wrapper {
+    display: none;
+    width: 0%;
+  }
+  .nav-bar-links-wrapper {
+    width: 100%;
+    justify-content: center;
+  }
+  .header-text {
+    padding: 9px 9px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 745px) {
+  .nav-bar-links-wrapper {
+    display: none;
+  }
+  .nav-bar-opposition-wrapper {
+    display: inline-block;
+    width: 100%;
+  }
+  .hamburger {
+    display: inline-block
+  }
+  .header-text {
+    font-size: 20px;
+    position: relative;
+    top: 4px
+  }
+}
+
+/* Begin Hamburger Overlay */
+
+.overlay {
+  /* Height & width depends on how you want to reveal the overlay (see JS below) */
+  height: 100%;
+  width: 0;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  background-color: var(--crimson); /* Black fallback color */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%; /* 25% from the top */
+  width: 100%; /* 100% width */
+  text-align: center; /* Centered text/links */
+  margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+.overlay a:hover {
+  background-color: #232323;
+  transition: .5s;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 30px;
+  color: white;
+  display: block; /* Display block instead of inline */
+  transition: 0.3s; /* Transition effects on hover (color) */
+  margin-top: 21px;
+  padding: 11px 25px;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+/* End Header */
+
+/* Footer */
+.footer {
+  width: 100%;
+  background-color: #232323;
+  text-align: center;
+  padding: 60px 0px;
+  color: white;
+  font-family: "Poppins", sans-serif;
+
+  -webkit-user-select: none; /* Make text non-selectable Safari */
+  -moz-user-select: none; /* Make text non-selectable Firefox */
+  -ms-user-select: none; /* Make text non-selectable IE10+/Edge */
+  user-select: none; /* Make text non-selectable Standard */
+}

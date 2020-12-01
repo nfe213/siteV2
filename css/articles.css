@@ -1,0 +1,202 @@
+:root {
+  --heading-text-padding: 24px;
+  --light: #333333;
+  --dark: #004c4c;
+  --dark-grey: #232323;
+  --header-text-size: 21px;
+  --light-grey: #c7c7c7;
+  --mid-grey:  #9e9e9e;
+  --ultra-light: #888;
+  --crimson-hov: #900f0980;
+}
+
+body {
+  margin: 0px;
+  background-color: var(--dark-grey);
+  font-family: sans-serif;
+  font-weight: normal;
+
+  -webkit-user-select: none; /* Make text non-selectable Safari */
+  -moz-user-select: none; /* Make text non-selectable Firefox */
+  -ms-user-select: none; /* Make text non-selectable IE10+/Edge */
+  user-select: none; /* Make text non-selectable Standard */
+}
+
+h1 {
+  font-weight: normal;
+}
+
+.h1-wrapper {
+  margin: 32px 0px;
+}
+
+/* Copy class for header object. */
+.head-obj-cl {
+  width: 100%;
+  height: 70px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  display: block;
+}
+/* End copy. */
+
+/* Copy class for base object. */
+.base-object {
+  height: 283px;
+  width: 100%;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  display: block;
+}
+/* End copy. */
+
+.section {
+  width: 100%;
+}
+
+.section-final {
+  width: 100%;
+  margin-bottom: 63px;
+}
+
+.tbl{
+  color: white;
+  font-family: Heebo, sans-serif;
+  border-collapse: collapse;
+  text-align: left;
+  width: 60%;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.tbl td, .tbl th {
+  padding: 8px 48px 8px 5px;
+  border-bottom: 1px solid var(--mid-grey);
+}
+
+.tbl th {
+  text-align: left;
+  background-color: none;
+  color: var(--ultra-light);
+}
+
+.head {
+  color: var(--light-grey);
+  margin-bottom: 0px;
+  margin-left: 20%;
+  margin-top: 0px;
+  padding-top: 50px;
+  font-size: 36px;
+  display: inline-block;
+}
+
+.head-top {
+  color: var(--light-grey);
+  margin-bottom: 0px;
+  margin-left: 20%;
+  margin-top: 0px;
+  display: inline-block;
+}
+
+.row:hover {
+  cursor: pointer;
+  background-color: var(--crimson-hov);
+}
+
+.c1 {
+  width: 35%;
+}
+
+.c2 {
+  width: 25%;
+}
+
+.c3 {
+  width: 25%;
+}
+
+.c4 {
+  width: 15%;
+}
+
+.super-header {
+  text-align: left;
+  margin-top: 63px;
+  margin: 0px;
+  margin-left: 20%;
+  font-size: 30px;
+  color: white;
+}
+
+.c1-3 {
+  width: 40%;
+}
+
+.c2-3 {
+  width: 40%;
+}
+
+.c3-3 {
+  width: 20%;
+}
+
+.role {
+  font-size: 18px;
+  display: block;
+  font-family: Heebo, sans-serif;
+  color: #666;
+  font-weight: normal;
+  padding-left: 20%;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@media all and (max-width: 1200px) {
+  .role, .head {
+    display: block;
+    float: none;
+  }
+
+  .role {
+    padding-left: 20%;
+  }
+
+  .tbl {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .section, .section-final, .role {
+    font-size: 24px;
+  }
+
+  .super-header, .head-top, .head, .role {
+    width: 80%;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin: 0px;
+    text-align: left;
+  }
+}
+
+@media all and (max-width: 1140px) {
+  .head-obj-cl {
+    height: 76px;
+  }
+}
+
+
+@media all and (max-width: 890px) {
+  .head-obj-cl {
+    height: 160px;
+  }
+}
+
+.head-top, .head {
+  font-size: 25px;
+}

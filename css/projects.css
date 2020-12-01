@@ -1,0 +1,73 @@
+:root {
+  --light: #008080;
+  --dark: #004c4c;
+  --dark-grey: #282828;
+  --light-grey: #96958d;
+  --mid-grey:  #6a6a6a;
+  --ultra-light: #B2D8D8;
+
+  /* Flickity Vars*/
+  --fkty-height: 500px;
+  --hover-effect-anim-time: .35s;
+  --hover-effect-opacity: .85;
+}
+
+.main-carousel, .main-carousel:focus {
+  outline: none;
+  border: none;
+
+  overflow: hidden;
+  background-color: #232323;
+}
+
+/* Flickity CSS See Vars in :root*/
+.img {
+  height: var(--fkty-height);
+  width: auto;
+  position: relative;
+  display: block;
+}
+
+.overlay-flickity {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: var(--hover-effect-anim-time) ease;
+  background-color: var(--dark-grey);
+}
+
+.text {
+  color: white;
+  font-size: 32px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.carousel-cell:hover .overlay-flickity {
+  opacity: var(--hover-effect-opacity);
+}
+
+.pictures-div {
+  background: #232323;
+  padding-top: 11px;
+}
+
+.photos-header {
+  color: white;
+  margin-left: 15%;
+}
+
+.company-text-no-picture {
+  width: 100%;
+  margin: 40px;
+}

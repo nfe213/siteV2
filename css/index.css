@@ -1,168 +1,171 @@
-body {
-  margin: 0px;
-  font-family: sans-serif;
+:root {
+  --crimson: #900f09;
 }
 
-p, div, ul {
-  margin: 0px;
-  padding: 0px;
-}
-
-/* Begin Header */
-.header {
-  width: 80%;
-  padding: 0px 10%;
-  background-color: black;
-  display: inline-flex;
-}
-
-.header-text {
-  font-size: 20px;
-  color: white;
-  padding: 9px 18px;
-}
-
-.nav-bar-links-wrapper {
+.body {
   width: 70%;
+  margin: 42px 15%;
+  font-family: "Poppins", "sans-serif"
+}
+
+.body1 {
+  width: 75%;
+  margin: 42px 10% 42px 15%;
+  font-family: "Poppins", "sans-serif"
+}
+
+/* Introduction */
+.profile-pic {
+  width: 36%;
   display: inline-flex;
-  justify-content: flex-end;
+  border-radius: 8px;
 }
 
-.nav-bar-opposition-wrapper {
-  width: 30%;
+.Introduction {
+    margin-left: 6%;
 }
 
-.hamburger {
-  font-family: Material Icons;
-  background-color: transparent;
-  color: white;
-  border: none;
-  font-size: 30px;
-  padding: 9px;
-  vertical-align: middle;
-  display: none;
+.bio {
+  width: 56%;
+  display: inline-block;
+  margin-left: 2%;
+  margin-bottom: 42px;
+  vertical-align: top;
 }
 
-.hamburger:focus {
-  outline: none;
+@media (max-width:1100px) {
+  .profile-pic {
+    display: block;
+    width: 50%;
+    margin: 21px auto;
+    max-height: none;
+  }
+  .bio {
+    display: block;
+    width: 80%;
+    margin: 21px 10%;
+  }
 }
 
-.logo {
-  height: 20px;
-  padding-bottom: 3px;
-  vertical-align: middle;
+.bullet-head {
+  margin: 0px;
 }
 
-.opposition-text {
-  display: inline-flex;
-}
-
-.nav-bar-item {
-  list-style-type: none;
-  justify-content: space-around;
-  flex-shrink: 1;
-}
-
-.nav-bar-item:hover {
-  background-color: red;
+/* Connect */
+.connect h1 {
   color: white;
 }
 
-@media (max-width: 1180px){
-  .header-text {
-    padding: 9px 9px;
-  }
+.connect {
+  background-color: #232323;
+  width: 70%;
+  padding: 21px 15% 42px 15%;
+  font-family: "Poppins", "sans-serif";
+  height: 300px;
 }
 
-@media (max-width: 1070px){
-  .header-text {
-    font-size: 16px;
-  }
+.link-col {
+  width: 33.3%;
+  padding: 0px;
+  margin: 21px 0px;
+  float: left;
 }
 
-@media (max-width: 890px){
-  .nav-bar-opposition-wrapper {
-    display: none;
-    width: 0%;
+.social-link {
+  width: 100px;
+  padding: 25px;
+  border-radius: 50%;
+  fill: white;
+  display: block;
+  margin: auto;
+}
+
+@media (max-width: 770px) {
+  .connect {
+    height: auto;
   }
-  .nav-bar-links-wrapper {
+
+  .link-col {
     width: 100%;
-    justify-content: center;
+    display: block;
+    margin: 32px auto;
+    float: none;
   }
-  .header-text {
-    padding: 9px 9px;
+
+  .social-link {
+    display: block;
+    margin: auto;
   }
 }
 
-@media (max-width: 610px) {
-  .nav-bar-links-wrapper {
+.social-link:hover {
+  background-color: white;
+  fill: #232323;
+}
+
+/* Adventures */
+.company {
+  background-color: #232323;
+  margin-bottom: 42px;
+  height: max-content;
+  border-radius: 5px;
+}
+
+.company-logo {
+  width: 13%;
+  padding: 40px;
+  float: left;
+}
+
+.company-text {
+  margin: 40px 0px;
+  display: inline-block;
+  color: white;
+  max-width: 75%;
+}
+
+@media (max-width: 970px) {
+  .company-logo {
     display: none;
   }
-  .nav-bar-opposition-wrapper {
-    display: inline-block;
+  .company-text {
     width: 100%;
-  }
-  .hamburger {
-    display: inline-block
-  }
-  .header-text {
-    font-size: 20px;
-    position: relative;
-    top: 4px
+    margin: 40px;
   }
 }
 
-/* Begin Hamburger Overlay */
-
-.overlay {
-  /* Height & width depends on how you want to reveal the overlay (see JS below) */
-  height: 100%;
-  width: 0;
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  left: 0;
-  top: 0;
-  background-color: rgb(0,0,0); /* Black fallback color */
-  background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
-  overflow-x: hidden; /* Disable horizontal scroll */
-  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+.company-name {
+  font-size: 24px;
 }
 
-.overlay-content {
-  position: relative;
-  top: 25%; /* 25% from the top */
-  width: 100%; /* 100% width */
-  text-align: center; /* Centered text/links */
-  margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+.involvement, .links {
+  color: #888;
 }
 
-.overlay a {
-  padding: 8px;
-  text-decoration: none;
-  font-size: 36px;
-  color: #818181;
-  display: block; /* Display block instead of inline */
-  transition: 0.3s; /* Transition effects on hover (color) */
+.links {
+  margin-top: 21px;
+  margin-bottom: 11px;
 }
 
-.overlay a:hover, .overlay a:focus {
-  color: #f1f1f1;
+.company-link:hover {
+  background: white;
+  color: var(--crimson);
+  transition: .4s;
 }
 
-.overlay .closebtn {
-  position: absolute;
-  top: 20px;
-  right: 45px;
-  font-size: 60px;
+.company-description {
+  padding-top: 21px;
+  color: white;
+  padding-top: 9px;
 }
 
-/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
-@media screen and (max-height: 450px) {
-  .overlay a {font-size: 20px}
-  .overlay .closebtn {
-    font-size: 40px;
-    top: 15px;
-    right: 35px;
-  }
+.last-company {
+  margin-bottom: 100px;
 }
-/* End Header */
+
+.company-link {
+  color: white;
+  padding: 6px;
+  margin: 15px;
+  border-radius: 3px;
+}

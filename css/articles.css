@@ -36,7 +36,6 @@ h1 {
 
 .section-final {
   width: 100%;
-  margin-bottom: 63px;
 }
 
 .tbl{
@@ -47,6 +46,7 @@ h1 {
   width: 60%;
   margin-left: 20%;
   margin-right: 20%;
+  overflow: hidden;
 }
 
 .tbl td, .tbl th {
@@ -171,6 +171,20 @@ h1 {
 @media all and (max-width: 1140px) {
   .head-obj-cl {
     height: 76px;
+  }
+  .date, .relation, .c3, .c4, .c3-3 {
+    display: none;
+  }
+  .tbl {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .section, .section-final, .role {
+    font-size: 20px;
+  }
+  .tbl td, .tbl th {
+    padding: 8px 30px 8px 5px;
   }
 }
 

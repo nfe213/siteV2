@@ -12,6 +12,14 @@
   --hover-effect-opacity: .85;
 }
 
+.company-logo {
+  display: none;
+}
+
+.company-text {
+  margin: 40px;
+}
+
 .main-carousel, .main-carousel:focus {
   outline: none;
   border: none;

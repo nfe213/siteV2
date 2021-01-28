@@ -1,0 +1,8 @@
+.pdf_link {
+  font-family: "Poppins", "sans-serif";
+  padding: 21px;
+  text-align: center;
+  color: var(--crimson);
+  text-decoration: underline;
+  display: block;
+}

@@ -3,7 +3,7 @@ const url = './docs/me_article.pdf';
 console.log("running");
 
 let pdfDoc = null,
-  pageNum = 1,
+  pageNum = 6,
   pageIsRendering = false,
   pageNumIsPending = null;
 

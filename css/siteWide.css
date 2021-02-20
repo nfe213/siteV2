@@ -102,10 +102,11 @@ a {
 }
 
 .nav-bar-links-wrapper {
-  width: max-content;
+  width: 70%;
   display: inline-flex;
   justify-content: flex-end;
   padding-left: 0px;
+  float: right;
 }
 
 .nav-bar-opposition-wrapper {

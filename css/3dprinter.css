@@ -1,0 +1,27 @@
+body{
+  text-align: center;
+  color: #232323;
+  margin-left: auto;
+}
+
+a {
+  color: blue;
+  text-decoration: underline;
+}
+
+h1 {
+  width: 15%;
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 21px;
+}
+
+.header-a {
+  text-decoration: none;
+}
+
+@media (max-width: 1450px) {
+  h1 {
+    width: 80%;
+  }
+}

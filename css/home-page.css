@@ -1,0 +1,103 @@
+body {
+  margin: 0px;
+  padding:0px;
+  font-family: "Poppins", sans-serif;
+}
+
+.border {
+  height: max-content;
+  /* width: 100%; */
+  padding: 2.5% 10%;
+  background-color: #232323;
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  padding: 2.5% 5%;
+  display: inline-flex;
+  flex-direction: row;
+  background-color: white;
+  height: max-content;
+  border-radius: 5px;
+  width: 80%;
+}
+
+.col-L {
+  padding: 2%;
+  width: 40%;
+}
+
+.col-R {
+  padding: 2%;
+  width: 60%;
+}
+
+.img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.link-col {
+  display: block;
+  width: auto;
+
+}
+
+.social-link {
+  display: block;
+  border-radius: 50%;
+  fill: #232323;
+  padding: 10px;
+  margin-right: 10px;
+  height: 3em;
+}
+
+@media (max-width: 985px) {
+  .content {
+    display: block;
+    margin: 10% 5%;
+  }
+  .col-L {
+      display: flex;
+      justify-content: center;
+  }
+
+  .img {
+    width: 60%;
+  }
+
+  .col-L, .col-R {
+    margin: auto;
+    width: 80%;
+  }
+
+  .connect {
+    height: auto;
+  }
+
+  .link-col {
+    width: 100%;
+    display: block;
+    margin: 32px auto;
+    float: none;
+  }
+
+  .social-link {
+    display: block;
+    margin: auto;
+    height: 10em;
+  }
+}
+
+.social-link:hover {
+  background-color: #232323;
+  fill: white;
+}

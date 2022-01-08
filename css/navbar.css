@@ -1,90 +1,9 @@
-:root {
-  --crimson: #900f09;
-}
-
-body {
-  margin: 0px;
-  font-family: sans-serif;
-}
-
-p, div, ul {
-  margin: 0px;
-}
-
-h1 {
-  display: block;
-  position: relative;
-  width: max-content;
-  padding: 8px 32px;
-  text-transform: uppercase;
-  color: #232323;
-
-  -webkit-user-select: none; /* Make text non-selectable Safari */
-  -moz-user-select: none; /* Make text non-selectable Firefox */
-  -ms-user-select: none; /* Make text non-selectable IE10+/Edge */
-  user-select: none; /* Make text non-selectable Standard */
-}
-
-h1::before {
-  position: absolute;
-    top: 0;
-    left: 0;
-    height: 30px;
-    width: 30px;
-
-    content: "";
-    background-image: url(../src/brackets.png);
-    background-size: cover;
-}
-h1::after {
-  position: absolute;
-      bottom: 0;
-      right: 0;
-      height: 30px;
-      width: 30px;
-
-      content: "";
-      background-image: url(../src/brackets.png);
-      background-size: cover;
-      transform: rotate(180deg);
-      -webkit-transform: rotate(180deg);
-      -moz-transform: rotate(180deg);
-      -ms-transform: rotate(180deg);
-      -o-transform: rotate(180deg);
-}
-
-h2 {
-  color: var(--crimson);
-  font-family: "Open Sans", sans-serif;
-  margin: 0px;
-}
-
-h3, span{
-  color: #414141;
-}
-
-li {
-  color: #444444 ;
-}
-
-a {
-  text-decoration: none;
-}
-
-.smartBreak {display: none;}
-
-@media (max-width: 510px) {
-  .smartBreak {
-    display: block;
-  }
-}
-
-/* Begin Header */
+/* Begin Navbar.css */
 
 .header {
   width: 80%;
   padding: 0px 10%;
-  background-color: var(--crimson);
+  background-color: #232323;
   display: inline-flex;
 
   -webkit-user-select: none; /* Make text non-selectable Safari */
@@ -99,6 +18,51 @@ a {
   padding: 18px 21px;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
+  position: relative;
+}
+
+.nav-bar-item::before {
+  position: absolute;
+    left: -29px;
+    top: 0px;
+    height: 67px;
+    width: 30px;
+    content: "";
+    background-image: url(../src/left.svg);
+    background-size: cover;
+    /* transition: .3s; */
+}
+
+.nav-bar-item::after {
+  position: absolute;
+    right: -30px;
+    top: 0px;
+    height: 67px;
+    width: 30px;
+    content: "";
+    background-image: url(../src/left.svg);
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    background-size: cover;
+    /* transition: .3s; */
+}
+
+.nav-bar-item:hover:before {
+  background-image: url(../src/left-white.svg);
+  /* transition: .5s; */
+}
+
+.nav-bar-item:hover:after {
+  background-image: url(../src/left-white.svg);
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  /* transition: .5s; */
 }
 
 .nav-bar-links-wrapper {
@@ -142,20 +106,20 @@ a {
   list-style-type: none;
   justify-content: space-around;
   flex-shrink: 1;
-  /* transition: .3s; */
   cursor: pointer;
-  width: max-content
+  width: max-content;
+  margin-right: 30px;
+  background-color: var(--crimson);
 }
 
 .nav-bar-item:hover {
   background-color: white;
   color: black;
-  /* transition: .5s; */
 }
 
 @media (max-width: 1450px) {
   .header-text {
-    font-size: 20px;
+    font-size: 21px;
     padding: 18px 18px
   }
 }
@@ -169,7 +133,7 @@ a {
     padding: 18px 9px;
   }
   .nav-bar-opposition-wrapper {
-    width: 30%
+    width: 30%;
   }
   .logo {
     height: 20px;
@@ -178,7 +142,7 @@ a {
 
 @media (max-width: 1130px) {
   .header-text {
-    font-size: 16px;
+    font-size: 21px;
   }
 }
 
@@ -192,8 +156,8 @@ a {
     justify-content: center;
   }
   .header-text {
-    padding: 9px 9px;
-    font-size: 18px;
+    padding: 18px 9px;
+    font-size: 21px;
   }
 }
 
@@ -209,7 +173,7 @@ a {
     display: inline-block
   }
   .header-text {
-    font-size: 20px;
+    /* font-size: 20px; */
     position: relative;
     top: 4px
   }
@@ -239,7 +203,7 @@ a {
 }
 
 .overlay a:hover {
-  background-color: #232323;
+  background-color: var(--d-grey);
   transition: .5s;
 }
 
@@ -261,7 +225,6 @@ a {
   font-size: 60px;
 }
 
-/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
 @media screen and (max-height: 450px) {
   .overlay a {font-size: 20px}
   .overlay .closebtn {
@@ -270,19 +233,9 @@ a {
     right: 35px;
   }
 }
-/* End Header */
 
-/* Footer */
-.footer {
-  width: 100%;
-  background-color: #232323;
-  text-align: center;
-  padding: 60px 0px;
-  color: white;
-  font-family: "Poppins", sans-serif;
-
-  -webkit-user-select: none; /* Make text non-selectable Safari */
-  -moz-user-select: none; /* Make text non-selectable Firefox */
-  -ms-user-select: none; /* Make text non-selectable IE10+/Edge */
-  user-select: none; /* Make text non-selectable Standard */
+a {
+  text-decoration: none;
 }
+
+/* End Navbar.css */

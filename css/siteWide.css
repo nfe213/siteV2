@@ -2,10 +2,6 @@
   --crimson: #900f09;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   margin: 0px;
   font-family: sans-serif;

@@ -142,7 +142,11 @@ a {
   list-style-type: none;
   justify-content: space-around;
   flex-shrink: 1;
+<<<<<<< HEAD
   transition: .3s;
+=======
+  /* transition: .3s; */
+>>>>>>> parent of 6e647a4 (testing)
   cursor: pointer;
   width: max-content
 }
@@ -150,7 +154,11 @@ a {
 .nav-bar-item:hover {
   background-color: white;
   color: black;
+<<<<<<< HEAD
   transition: .5s;
+=======
+  /* transition: .5s; */
+>>>>>>> parent of 6e647a4 (testing)
 }
 
 @media (max-width: 1450px) {

@@ -143,10 +143,14 @@ a {
   justify-content: space-around;
   flex-shrink: 1;
 <<<<<<< HEAD
+<<<<<<< HEAD
   transition: .3s;
 =======
   /* transition: .3s; */
 >>>>>>> parent of 6e647a4 (testing)
+=======
+  transition: .3s;
+>>>>>>> parent of 3c96e2e (updated to V2.1)
   cursor: pointer;
   width: max-content
 }
@@ -155,10 +159,14 @@ a {
   background-color: white;
   color: black;
 <<<<<<< HEAD
+<<<<<<< HEAD
   transition: .5s;
 =======
   /* transition: .5s; */
 >>>>>>> parent of 6e647a4 (testing)
+=======
+  transition: .5s;
+>>>>>>> parent of 3c96e2e (updated to V2.1)
 }
 
 @media (max-width: 1450px) {

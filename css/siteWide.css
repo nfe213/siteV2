@@ -142,6 +142,10 @@ a {
   list-style-type: none;
   justify-content: space-around;
   flex-shrink: 1;
+<<<<<<< HEAD
+=======
+  transition: .3s;
+>>>>>>> parent of 3c96e2e (updated to V2.1)
   cursor: pointer;
   width: max-content
 }
@@ -149,6 +153,10 @@ a {
 .nav-bar-item:hover {
   background-color: white;
   color: black;
+<<<<<<< HEAD
+=======
+  transition: .5s;
+>>>>>>> parent of 3c96e2e (updated to V2.1)
 }
 
 @media (max-width: 1450px) {

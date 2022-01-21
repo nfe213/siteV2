@@ -79,14 +79,14 @@
   float: left;
 }
 
-/* .social-link {
+.social-link {
   width: 100px;
   padding: 25px;
   border-radius: 50%;
   fill: white;
   display: block;
   margin: auto;
-} */
+}
 
 @media (max-width: 770px) {
   .connect {

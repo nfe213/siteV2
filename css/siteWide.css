@@ -172,7 +172,10 @@ a {
 @media (max-width: 1450px) {
   .header-text {
     font-size: 20px;
-    padding: 18px 18px
+    padding: 18px 18px;
+  }
+  .company-link {
+    margin-bottom: 25px;
   }
 }
 
@@ -185,7 +188,7 @@ a {
     padding: 18px 9px;
   }
   .nav-bar-opposition-wrapper {
-    width: 30%
+    width: 30%;
   }
   .logo {
     height: 20px;

@@ -211,3 +211,9 @@
   margin-right: auto;
   font-size: 21px
 }
+
+@media (max-width: 1450px) {
+  .company-link {
+    margin-bottom: 25px;
+  }
+}

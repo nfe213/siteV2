@@ -174,9 +174,6 @@ a {
     font-size: 20px;
     padding: 18px 18px;
   }
-  .company-link {
-    margin-bottom: 25px;
-  }
 }
 
 @media (max-width: 1130px) {
